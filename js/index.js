@@ -138,6 +138,7 @@ const app = new Vue({
           this.isLoading = false; // 移除 loading 效果
           console.log(res);
           this.carts = res.data.data;
+          
           // 購物清單的總計會出現無限累加的現象，
           // 最簡單的解決方法為「每次進行累加時，就清空 this.cartTotal = 0」
           this.cartTotal = 0;
